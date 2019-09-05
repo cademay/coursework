@@ -1,0 +1,16 @@
+# ignores object files, emacs backup files
+# this executable by name
+
+syntax: glob
+*~
+*.o
+spellcheck
+spellcheck_*
+warmup
+corpus_*
+searchdir
+sip
+synonyms
+
+syntax: regexp
+(.*/)?\#[^/]*\#$

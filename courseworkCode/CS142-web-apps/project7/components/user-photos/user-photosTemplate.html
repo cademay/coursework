@@ -1,0 +1,31 @@
+<div>
+
+	<div ng-repeat="photoObject in currentUserPhotoObjects" class="photo_object">
+		
+		<!-- Image -->
+		<img ng-src=/images/{{photoObject.file_name}}>
+
+		<p>Posted on {{photoObject.date_time}}</p>
+		<button ng-show=usersOwnPhoto()>Delete photo</button>
+		<input type='text' ng-model='add_new_comment.user_input_text[$index]'>
+
+
+		<button ng-click='add_new_comment.currentButton.push($index); add_new_comment.clicked(photoObject._id)'>Add a Comment</button>
+
+		<!-- Comments on Image-->
+		<div>
+			<h3 class="current_user_photo_comments_header">Comments</h3>
+			
+			<div ng-repeat="commentObject in photoObject.comments" class="user_comment_on_photo">
+
+				<div>	
+					<a href="#!/users/{{commentObject.user._id}}">{{commentObject.user.first_name}} {{commentObject.user.last_name}}:</a> {{commentObject.comment}}
+					<p style="text-indent:25px">@ {{commentObject.date_time}}</p>
+				</div>
+				
+			</div>
+		</div>
+			
+	</div>
+
+</div>

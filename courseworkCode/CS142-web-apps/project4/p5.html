@@ -1,0 +1,40 @@
+<!doctype html>
+<html ng-app="cs142App" ng-controller="MainController">
+  <head>
+    <title>{{main.title || "CS142 Class Project"}}</title>
+
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="mainController.js"></script>
+
+    <script src="components/header/headerController.js"></script>
+    <script src="components/states/statesController.js"></script>
+    <script src="components/example/exampleController.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="components/states/states.css" />
+    <link rel="stylesheet" type="text/css" href="components/header/header.css" />
+    <link rel="stylesheet" type="text/css" href="components/example/example.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+
+    <script src="modelData/states.js"></script>
+    <script src="modelData/example.js"></script>
+
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+
+
+  </head>
+  <body>
+  	<div ng-include="'components/header/headerTemplate.html'" ng-controller="HeaderController"></div>
+	
+	<div class="cs142-main-toolbar-p5">
+		<a href="#!example">Example</a>
+		<a href="#!states">States</a>
+	</div>
+
+ 	<div ng-view></div>
+	<!--
+	<div ng-include="'components/example/exampleTemplate.html'" ng-controller="ExampleController" ng-show="main.p4_show_example_screen === true"></div>
+ 	<div ng-include="'components/states/statesTemplate.html'" ng-controller="StatesController" ng-show="main.p4_show_example_screen === false"></div>
+	-->
+  </body>
+</html>

@@ -1,0 +1,16 @@
+# ignores object files, emacs backup files
+# this executable by name
+
+syntax: glob
+*~
+*.o
+libcvecmap.a
+vectest
+maptest
+thesaurus
+*_soln
+thesaurus.txt
+corpus_anc
+
+syntax: regexp
+(.*/)?\#[^/]*\#$

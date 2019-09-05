@@ -1,0 +1,17 @@
+
+.users_name_in_user_list {
+
+	margin: auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-weight: bold:
+
+}
+
+.user_list {
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+}

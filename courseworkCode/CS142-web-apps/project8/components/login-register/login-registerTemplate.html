@@ -1,0 +1,55 @@
+<div>
+
+
+	<h1>Please Login</h1>
+
+	<h3>Enter your login name:</h3>
+	<input type='text' ng-model='user_login_input.login_name'>
+
+	<h3>Enter your password:</h3>
+	<input type='password' ng-model='user_login_input.password'>
+	
+	<button ng-click=login_button.clicked()>Log Me In</button>
+
+	<p>{{login_issue_display.text}}</p>
+
+
+
+	<div class="registration">
+		<h1>Register</h1>
+		
+		<h3>Enter your first name:</h3>
+		<input type='text' ng-model='registerObject.first_name'>
+
+		<h3>Enter your last name:</h3>
+		<input type='text' ng-model='registerObject.last_name'>
+
+		<h3>Enter a login name:</h3>
+		<input type='text' ng-model='registerObject.login_name'>
+
+		<h3>Enter your location:</h3>
+		<input type='text' ng-model='registerObject.loc'>
+
+		<h3>Enter a description of yourself:</h3>
+		<input type='text' ng-model='registerObject.description'>
+
+		<h3>Enter your occupation:</h3>
+		<input type='text' ng-model='registerObject.occupation'>
+
+		<h3>Enter a password:</h3>
+		<input type='password' ng-model='registerObject.password1'>
+
+		<h3>Reenter your password:</h3>
+		<input type='password' ng-model='registerObject.password2'>
+
+		
+
+		<button ng-click=registerObject.register_clicked()>Register Me</button>
+
+	
+		<p>{{register_issue_display.text}}</p>
+
+	</div>
+
+	
+</div>

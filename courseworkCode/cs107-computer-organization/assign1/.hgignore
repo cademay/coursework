@@ -1,0 +1,11 @@
+# ignores object files, emacs backup files
+# assignment executables (explicitly named)
+
+syntax: glob
+*~
+*.o
+mywhich
+mygrep
+
+syntax: regexp
+(.*/)?\#[^/]*\#$

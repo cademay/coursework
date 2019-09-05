@@ -1,0 +1,10 @@
+# ignores object files, emacs backup files
+# this executable by name
+
+syntax: glob
+*~
+*.o
+myprogram
+
+syntax: regexp
+(.*/)?\#[^/]*\#$

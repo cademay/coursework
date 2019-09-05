@@ -1,0 +1,26 @@
+<div>
+
+	<div ng-repeat="photoObject in currentUserPhotoObjects" class="photo_object">
+		
+		<!-- Image -->
+		<img ng-src=/images/{{photoObject.file_name}}>
+		<p>Posted on {{photoObject.date_time}}</p>
+
+
+		<!-- Comments on Image-->
+		<div>
+			<h3 class="current_user_photo_comments_header">Comments</h3>
+			
+			<div ng-repeat="commentObject in photoObject.comments" class="user_comment_on_photo">
+
+				<div>	
+					<a href="#!/users/{{commentObject.user._id}}">{{commentObject.user.first_name}} {{commentObject.user.last_name}}:</a> {{commentObject.comment}}
+					<p style="text-indent:25px">@ {{commentObject.date_time}}</p>
+				</div>
+				
+			</div>
+		</div>
+			
+	</div>
+
+</div>

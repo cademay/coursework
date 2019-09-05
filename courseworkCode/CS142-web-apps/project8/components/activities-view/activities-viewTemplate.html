@@ -1,0 +1,11 @@
+<div class='outer_container'>
+	<h1>Activities</h1>
+
+	<div ng-repeat='activityObject in activityList'>
+		<p>{{activityObject.user_name}} {{activityObject.action_string}}</p>
+		<img ng-if='activityObject.image_file_name.length > 0' ng-src=/images/{{activityObject.image_file_name}} class='thumbnail_image'>	
+		<p style="text-indent:25px">@ {{activityObject.date}}</p>
+		<hr>	
+	</div>
+
+</div>

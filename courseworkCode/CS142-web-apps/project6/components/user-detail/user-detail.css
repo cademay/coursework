@@ -1,0 +1,15 @@
+
+#user_name_display_in_detail {
+	font-weight: 550;
+	margin: auto;
+}
+
+.detail_outer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+		
+	margin: 20px;
+	height: 80%;
+	width: 80%;
+}

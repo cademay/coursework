@@ -1,0 +1,35 @@
+
+
+.photo_object {
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 60px;
+	margin-left: 25px;
+}
+
+.photo_img {
+	max-width:75%;	
+
+}
+
+.photos_container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: auto;
+}
+
+.user_comment_on_photo {
+	margin-bottom: 20px;
+}
+
+
+
+.like {
+	display: flex;
+	flex-direction: row;
+}
+
+.likebutton {
+	margin: 15px;
+}
