@@ -23,6 +23,6 @@
     "express": "^4.13.3",
     "faker": "^3.0.1",
     "jshint": "^2.9.4",
-    "mongoose": "^4.3.4"
+    "mongoose": "^5.7.5"
   }
 }
